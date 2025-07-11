@@ -31,7 +31,7 @@ const templateParams = {
     templateParams,
     process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
   ).then(
-    (result) => {
+    () => {
       alert('Email inviata con successo!');
     },
     (error) => {
