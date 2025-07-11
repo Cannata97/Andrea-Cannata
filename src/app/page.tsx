@@ -5,7 +5,6 @@ import Projects from '@/app/components/Projects'
 import Contact from '@/app/components/Contact'
 
 import { useEffect } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
 
 export default function Home() {
   useEffect(() => {
