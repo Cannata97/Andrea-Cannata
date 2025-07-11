@@ -22,9 +22,8 @@ export default function Navbar() {
         <span className="font-bold text-xl">Andrea Cannata</span>
         <div className="space-x-6">
           <button onClick={() => handleNavigation('hero')} className="hover:underline">Home</button>
-          <button onClick={() => handleNavigation('projects')} className="hover:underline">Progetti</button>
-          <button onClick={() => handleNavigation('contact')} className="hover:underline">Contatti</button>
-          <Link href="/contact" className="hover:underline">Pagina Contatti</Link>
+          <button onClick={() => handleNavigation('projects')} className="hover:underline">Services</button>
+          <button onClick={() => handleNavigation('contact')} className="hover:underline">Contact Me</button>
         </div>
       </div>
     </nav>

@@ -2,7 +2,7 @@
 import Navbar from '@/app/components/Navbar'
 import Hero from '@/app/components/Hero'
 import Projects from '@/app/components/Projects'
-import Contact from '@/app/components/Contact'
+import Footer from '@/app/components/Footer';
 
 import { useEffect } from 'react';
 
@@ -23,7 +23,8 @@ export default function Home() {
     
         <section id="hero"><Hero /></section>
         <section id="projects"><Projects /></section>
-        <section id="contact"><Contact /></section>
+        <section id="contact"><Footer /></section>
+        
     </>
   );
 }

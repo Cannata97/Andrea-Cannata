@@ -1,7 +1,7 @@
 export default function Projects() {
   return (
     <section className="py-20 px-6">
-      <h2 className="text-3xl font-bold mb-6 text-center">Progetti</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center">Services</h2>
       <div className="grid md:grid-cols-2 gap-6">
         <div className="p-4 border rounded-xl shadow">
           <h3 className="text-xl font-semibold">CRM per PMI</h3>
