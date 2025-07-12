@@ -31,9 +31,9 @@ export default function Hero() {
         </button>
 
         {/* CERTIFICAZIONI */}
-        <div className="mt-12">
-          <h2 className="text-lg font-semibold mb-4">Certificazioni</h2>
-          <div className="flex justify-center gap-6 flex-wrap">
+        <div className="mt-10">
+          <h2 className="text-lg font-semibold mb-8 ">Certificazioni</h2>
+          <div className="flex justify-center gap-4 flex-wrap">
             <Image
               src="/Admin.png"
               alt="Salesforce Certified Administrator"

@@ -108,7 +108,7 @@ const templateParams = {
         <div className="text-center border-t border-gray-700 pt-8">
   <p className="mb-10 text-xl">Follow me on</p>
   <div className="flex justify-center space-x-16">
-    <a href="https://linkedin.com/in/tuo-profilo" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:text-blue-400">
+    <a href="https://linkedin.com/in/andrea-cannata-450584219" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:text-blue-400">
       <Linkedin size={40} />
   
     </a>
