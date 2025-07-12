@@ -106,26 +106,28 @@ const templateParams = {
 
         {/* SOCIAL */}
         <div className="text-center border-t border-gray-700 pt-8">
-  <p className="mb-4">Seguimi su</p>
-  <div className="flex justify-center space-x-6">
+  <p className="mb-10 text-xl">Follow me on</p>
+  <div className="flex justify-center space-x-16">
     <a href="https://linkedin.com/in/tuo-profilo" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:text-blue-400">
-      <Linkedin size={20} />
-      <span>LinkedIn</span>
+      <Linkedin size={40} />
+  
     </a>
-    <a href="https://github.com/tuo-username" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:text-gray-400">
-      <Github size={20} />
-      <span>GitHub</span>
+    <a href="https://github.com/Cannata97" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:text-gray-400">
+      <Github size={40} />
+    
     </a>
     <a href="mailto:andreacannata97@gmail.com" className="flex items-center space-x-1 hover:text-red-400">
-      <Mail size={20} />
-      <span>Email</span>
+      <Mail size={40} />
+      <span></span>
     </a>
   </div>
+
 </div>
         <p className="text-center text-gray-500 mt-8">
           © {new Date().getFullYear()} Andrea Cannata. Tutti i diritti riservati.
         </p>
       </div>
+      <p className="text-center text-gray-500 ">Partita iva 00000000000000</p>
     </footer>
   );
 }

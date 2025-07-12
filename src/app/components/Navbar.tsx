@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
         <span className="font-bold text-xl">Andrea Cannata</span>
         <div className="space-x-6">
-          <button onClick={() => handleNavigation('hero')} className="hover:underline">Home</button>
+          <button onClick={() => handleNavigation('hero')} className="hover:underline">About me</button> 
           <button onClick={() => handleNavigation('projects')} className="hover:underline">Services</button>
           <button onClick={() => handleNavigation('contact')} className="hover:underline">Contact Me</button>
         </div>
