@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Mail, Github, Linkedin } from 'lucide-react';
 import emailjs from 'emailjs-com';
+import Image from 'next/image';
 export default function Footer() {
   const [selectedService, setSelectedService] = useState('');
   const [formData, setFormData] = useState({
@@ -116,6 +117,18 @@ const templateParams = {
       <Github size={40} />
     
     </a>
+
+    <a href="https://www.salesforce.com/trailblazer/acannata1" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:text-gray-400">
+        <Image
+          src="/trailhead.png"
+          alt="Trailhead Logo"
+          width={70}
+          height={70}
+          className="transition duration-150 hover:filter hover:brightness-0 hover:invert hover:sepia hover:hue-rotate-180 hover:saturate-200"
+        />
+    
+    </a>
+
     <a href="mailto:andreacannata97@gmail.com" className="flex items-center space-x-1 hover:text-red-400">
       <Mail size={40} />
       <span></span>
@@ -124,7 +137,7 @@ const templateParams = {
 
 </div>
         <p className="text-center text-gray-500 mt-8">
-          © {new Date().getFullYear()} Andrea Cannata. Tutti i diritti riservati.
+          © {new Date().getFullYear()} Andrea Cannata. All rights reserved.
         </p>
       </div>
       <p className="text-center text-gray-500 ">Partita iva 00000000000000</p>

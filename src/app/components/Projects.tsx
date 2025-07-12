@@ -11,7 +11,7 @@ import {
 export default function Projects() {
   return (
     <section className="py-20 px-6 bg-gray-100 text-gray-900">
-      <h2 className="text-3xl font-bold mb-10 text-center">Servizi</h2>
+      <h2 className="text-3xl font-bold mb-10 text-center">What can i do for you</h2>
 
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         <ServiceCard
@@ -22,8 +22,8 @@ export default function Projects() {
         />
         <ServiceCard
           icon={<Code2 />}
-          title="Sviluppo Salesforce"
-          description="Sviluppo, testing e delivery del tuo progetto Salesforce."
+          title="Sviluppo SaaS"
+          description="Sviluppo, testing e delivery del tuo progetto SaaS."
             hoverGradient={true}
         />
         <ServiceCard
