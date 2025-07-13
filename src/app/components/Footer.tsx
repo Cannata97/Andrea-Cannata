@@ -99,7 +99,7 @@ const templateParams = {
 
           <button
             type="submit"
-            className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded font-semibold"
+            className="relative inline-flex items-center justify-center px-5 py-2.5 mb-2 me-2 overflow-hidden text-lg font-medium text-white rounded-lg border border-cyan-500 bg-transparent hover:bg-white hover:text-gray-900 transition-colors duration-300"
           >
             Invia
           </button>

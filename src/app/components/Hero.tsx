@@ -17,18 +17,19 @@ export default function Hero() {
           Andrea Cannata — Full-stack & Salesforce Developer
         </h1>
 
-        <p className="text-lg text-gray-100 leading-relaxed">
-         I’m a full-stack developer with strong experience in building SaaS applications, implementing Salesforce solutions, and delivering CPQ (Configure, Price, Quote) projects for enterprise-level clients. My background includes designing scalable architectures, automating business workflows, and integrating complex systems to meet real-world needs. I’m passionate about building clean, efficient, and maintainable code that drives business value.
+      <p className="text-lg text-gray-100 leading-relaxed">
+  I’m a <strong className="font-semibold">full-stack developer</strong> with strong experience in building <strong className="font-semibold">SaaS applications</strong>, implementing <strong className="font-semibold">Salesforce solutions</strong>, and delivering <strong className="font-semibold">CPQ (Configure, Price, Quote)</strong> projects for enterprise-level clients. My background includes designing <strong className="font-semibold">scalable architectures</strong>, automating <strong className="font-semibold">business workflows</strong>, and integrating <strong className="font-semibold">complex systems</strong> to meet real-world needs. I’m passionate about building <strong className="font-semibold">clean, efficient, and maintainable code</strong> that drives business value.
+</p>
 
 
-        </p>
+ <button
+  onClick={handleScroll}
+  className="relative inline-flex items-center justify-center px-5 py-2.5 mb-2 me-2 overflow-hidden text-lg font-medium text-white rounded-lg border border-cyan-500 bg-transparent hover:bg-white hover:text-gray-900 transition-colors duration-300"
+>
+  Contact Me
+</button>
 
-        <button
-          onClick={handleScroll}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition"
-        >
-          Contact Me
-        </button>
+
 
         {/* CERTIFICAZIONI */}
         <div className="mt-10">
@@ -39,35 +40,35 @@ export default function Hero() {
               alt="Salesforce Certified Administrator"
               width={150}
               height={150}
-              className="drop-shadow-md"
+              className="drop-shadow-md w-24 sm:w-32 md:w-36"
             />
             <Image
               src="/Developer.png"
               alt="Salesforce Certified Developer"
               width={150}
               height={150}
-              className="drop-shadow-md"
+              className="drop-shadow-md w-24 sm:w-32 md:w-36"
             />
             <Image 
               src="/AppBuilder.png"
               alt="Salesforce Certified Architect"
               width={150}
               height={150}
-              className="drop-shadow-md" 
+              className="drop-shadow-md w-24 sm:w-32 md:w-36" 
             />
             <Image
               src="/OmniConsulting.png"
               alt="Salesforce Certified Consultant"
               width={150}
               height={150}
-              className="drop-shadow-md"
+              className="drop-shadow-md w-24 sm:w-32 md:w-36"
             />
             <Image
               src="/OmniDeveloper.png"
               alt="Salesforce Certified Marketing Specialist"
               width={150}
               height={150}
-              className="drop-shadow-md"
+              className="drop-shadow-md w-24 sm:w-32 md:w-36"
             />  
             
           </div>
