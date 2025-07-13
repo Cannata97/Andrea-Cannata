@@ -2,10 +2,10 @@ import ServiceCard from './ServiceCard';
 import {
   Lightbulb,
   Code2,
-  Share2,
-  IdCard,
-  ShieldCheck,
-  Gem,
+  Cloud,
+  ReceiptText,
+  PanelsTopLeft,
+  Workflow,
 } from 'lucide-react';
 
 export default function Projects() {
@@ -16,38 +16,38 @@ export default function Projects() {
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         <ServiceCard
           icon={<Lightbulb />}
-          title="Consultazione & Implementazione"
-          description="Analisi e implementazione della tua istanza Salesforce."
+          title="Salesforce Consulting"
+          description="Strategic consulting for companies looking to implement or optimize Salesforce. Business process analysis, requirements gathering, initial configuration, and support for migration from legacy systems.."
           hoverGradient={true}
+        />
+        <ServiceCard
+          icon={<Cloud />}
+          title="Salesforce Development"
+          description="I develop custom solutions with Apex, Lightning Web Components, and advanced automation. I manage the entire development cycle: from prototype to production release."
+            hoverGradient={true}
         />
         <ServiceCard
           icon={<Code2 />}
-          title="Sviluppo SaaS"
-          description="Sviluppo, testing e delivery del tuo progetto SaaS."
+          title="SaaS Product Development"
+          description="Complete development of SaaS (Software as a Service) web applications, from analysis to production deployment. I handle architectural design, front-end and back-end development, authentication, external service integration, databases, and deployment on modern platforms like Vercel or AWS."
             hoverGradient={true}
         />
         <ServiceCard
-          icon={<Share2 />}
-          title="Integrazione Salesforce"
-          description="Collegamento con sistemi esterni tramite API sicure."
-            hoverGradient={true}
-        />
-        <ServiceCard
-          icon={<IdCard />}
-          title="Amministrazione Salesforce"
-          description="Gestione e configurazione utenti, permessi e sicurezza."
+          icon={<ReceiptText />}
+          title="Oracle CPQ Development & Consulting"
+          description="Technical consulting and development on Oracle CPQ: configuration of pricing rules, custom interfaces, integration with CRM/ERP and optimization of sales processes."
           hoverGradient={true}
         />
         <ServiceCard
-          icon={<ShieldCheck />}
-          title="Manutenzione & Supporto"
-          description="Supporto tecnico per garantire efficienza continua."
+          icon={<PanelsTopLeft />}
+          title="Website Development"
+          description="Creation of modern, responsive websites optimized for performance and SEO. Ideal for businesses, professional portfolios, landing pages, or customized digital showcases."
           hoverGradient={true}
         />
         <ServiceCard
-          icon={<Gem />}
-          title="Formazione Salesforce"
-          description="Formazione per utenti e amministratori interni."
+          icon={<Workflow />}
+          title="Automation & Workflow Engineering"
+          description="Configure advanced automations, approval workflows, and digital processes on platforms like Salesforce, Oracle CPQ, or custom web applications. Optimize manual processes to reduce time and operational risks."
           hoverGradient={true}
         />
       </div>

@@ -57,11 +57,11 @@ const templateParams = {
       <p className="text-gray-300">andreacannata97@gmail.com</p>
     </div>
     <div>
-      <p className="font-semibold">Telefono:</p>
+      <p className="font-semibold">Phone:</p>
       <p className="text-gray-300">+39 345 937 7982</p>
     </div>
     <div>
-      <p className="font-semibold">Località:</p>
+      <p className="font-semibold">Location:</p>
       <p className="text-gray-300">Modica, Italia</p>
     </div>
   </div>
@@ -119,7 +119,7 @@ const templateParams = {
       type="submit"
       className="relative inline-flex items-center justify-center px-5 py-2.5 mb-2 me-2 overflow-hidden text-lg font-medium text-white rounded-lg border border-cyan-500 bg-transparent hover:bg-white hover:text-gray-900 transition-colors duration-300"
     >
-      Invia
+      Send
     </button>
   </form>
 </div>
