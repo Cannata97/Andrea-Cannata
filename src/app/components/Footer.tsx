@@ -51,7 +51,7 @@ const templateParams = {
        <div className="flex flex-col lg:flex-row lg:gap-x-12 gap-y-12 w-full">
   {/* INFO DI CONTATTO */}
   <div className="w-full lg:w-1/2 flex-shrink-0 space-y-4">
-  <h3 className="text-xl font-semibold">Save this for later</h3>
+  <h3 className="text-xl font-semibold">Contact Info</h3>
     <div>
       <p className="font-semibold">Email:</p>
       <p className="text-gray-300">andreacannata97@gmail.com</p>
@@ -68,18 +68,18 @@ const templateParams = {
 
   {/* FORM CONTATTO */}
   <form onSubmit={handleSubmit} className="w-full lg:w-1/2 flex-shrink-0 space-y-6">
-    <h3 className="text-xl font-semibold">Tell me wath you need</h3>
+    <h3 className="text-xl font-semibold">Request a consultation</h3>
     
     <input
       type="text"
-      placeholder="Il tuo nome"
+      placeholder="Your Name"
       className="w-full p-2 rounded text-white bg-gray-800"
       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
       required
     />
     <input
       type="email"
-      placeholder="La tua email"
+      placeholder="Your Email"
       className="w-full p-2 rounded text-white bg-gray-800"
       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
       required
@@ -92,24 +92,24 @@ const templateParams = {
       }}
       required
     >
-      <option value="">Seleziona un servizio</option>
-      <option value="Sito Web">Sito Web</option>
+      <option value="">Select a service</option>
+      <option value="Sito Web">WebSite</option>
       <option value="CRM">CRM</option>
-      <option value="Consulenza">Consulenza</option>
+      <option value="Consulenza">Consultancy</option>
       <option value="Other">Other</option>
     </select>
 
     {selectedService === 'Other' && (
       <input
         type="text"
-        placeholder="Specifica il servizio"
+        placeholder="Specify the service"
         className="w-full p-2 rounded text-white bg-gray-800"
         onChange={(e) => setFormData({ ...formData, customService: e.target.value })}
         required
       />
     )}
     <textarea
-      placeholder="Scrivi il tuo messaggio..."
+      placeholder="Write your message..."
       className="w-full p-2 rounded text-white h-32 bg-gray-800"
       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
       required
