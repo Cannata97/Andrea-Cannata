@@ -1,30 +1,17 @@
-'use client';
-import Navbar from '@/app/components/Navbar'
-import Hero from '@/app/components/Hero'
-import Projects from '@/app/components/Projects'
-import Footer from '@/app/components/Footer';
+import Navbar from '@/app/components/Navbar';
+import HomeClient from '@/app/components/HomeClient';
 
-import { useEffect } from 'react';
+export const metadata = {
+  title: 'Andrea Cannata | Salesforce & SaaS Developer',
+  description: 'I develop solutions on Salesforce, Oracle CPQ and custom SaaS web applications.',
+  keywords: ['Salesforce Developer', 'Oracle CPQ', 'SaaS', 'CRM', 'Web Development', 'Freelance'],
+};
 
 export default function Home() {
-  useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      const el = document.querySelector(hash);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, []);
-
   return (
     <>
       <Navbar />
-    
-        <section id="hero"><Hero /></section>
-        <section id="projects"><Projects /></section>
-        <section id="contact"><Footer /></section>
-        
+      <HomeClient />
     </>
   );
 }
