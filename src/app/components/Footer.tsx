@@ -45,65 +45,84 @@ const templateParams = {
 
   return (
     <footer className="bg-gray-900 text-white py-16 px-6">
+      
       <div className="max-w-4xl mx-auto space-y-12">
-        {/* FORM */}
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <h2 className="text-2xl font-semibold">Contattami</h2>
+          <h2 className="text-2xl font-semibold text-center">Contact</h2>
+       <div className="flex flex-col lg:flex-row lg:gap-x-12 gap-y-12 w-full">
+  {/* INFO DI CONTATTO */}
+  <div className="w-full lg:w-1/2 flex-shrink-0 space-y-4">
+  <h3 className="text-xl font-semibold">Save this for later</h3>
+    <div>
+      <p className="font-semibold">Email:</p>
+      <p className="text-gray-300">andreacannata97@gmail.com</p>
+    </div>
+    <div>
+      <p className="font-semibold">Telefono:</p>
+      <p className="text-gray-300">+39 345 937 7982</p>
+    </div>
+    <div>
+      <p className="font-semibold">Località:</p>
+      <p className="text-gray-300">Modica, Italia</p>
+    </div>
+  </div>
 
-          <input
-            type="text"
-            placeholder="Il tuo nome"
-            className="w-full p-2 rounded text-white"
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            required
-          />
+  {/* FORM CONTATTO */}
+  <form onSubmit={handleSubmit} className="w-full lg:w-1/2 flex-shrink-0 space-y-6">
+    <h3 className="text-xl font-semibold">Tell me wath you need</h3>
+    
+    <input
+      type="text"
+      placeholder="Il tuo nome"
+      className="w-full p-2 rounded text-white bg-gray-800"
+      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+      required
+    />
+    <input
+      type="email"
+      placeholder="La tua email"
+      className="w-full p-2 rounded text-white bg-gray-800"
+      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+      required
+    />
+    <select
+      className="w-full p-2 rounded text-white bg-gray-900"
+      onChange={(e) => {
+        setSelectedService(e.target.value);
+        setFormData({ ...formData, service: e.target.value });
+      }}
+      required
+    >
+      <option value="">Seleziona un servizio</option>
+      <option value="Sito Web">Sito Web</option>
+      <option value="CRM">CRM</option>
+      <option value="Consulenza">Consulenza</option>
+      <option value="Other">Other</option>
+    </select>
 
-          <input
-            type="email"
-            placeholder="La tua email"
-            className="w-full p-2 rounded text-white"
-            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            required
-          />
+    {selectedService === 'Other' && (
+      <input
+        type="text"
+        placeholder="Specifica il servizio"
+        className="w-full p-2 rounded text-white bg-gray-800"
+        onChange={(e) => setFormData({ ...formData, customService: e.target.value })}
+        required
+      />
+    )}
+    <textarea
+      placeholder="Scrivi il tuo messaggio..."
+      className="w-full p-2 rounded text-white h-32 bg-gray-800"
+      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+      required
+    />
 
-          <select
-            className="w-full p-2 rounded text-white bg-gray-900"
-            onChange={(e) => {
-              setSelectedService(e.target.value);
-              setFormData({ ...formData, service: e.target.value });
-            }}
-            required
-          >
-            <option value="">Seleziona un servizio</option>
-            <option value="Sito Web">Sito Web</option>
-            <option value="CRM">CRM</option>
-            <option value="Consulenza">Consulenza</option>
-            <option value="Other">Other</option>
-          </select>
-
-          {selectedService === 'Other' && (
-            <input
-              type="text"
-              placeholder="Specifica il servizio"
-              className="w-full p-2 rounded text-white"
-              onChange={(e) => setFormData({ ...formData, customService: e.target.value })}
-              required
-            />
-          )}
-          <textarea
-            placeholder="Scrivi il tuo messaggio..."
-            className="w-full p-2 rounded text-white h-32"
-            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            required
-          />
-
-          <button
-            type="submit"
-            className="relative inline-flex items-center justify-center px-5 py-2.5 mb-2 me-2 overflow-hidden text-lg font-medium text-white rounded-lg border border-cyan-500 bg-transparent hover:bg-white hover:text-gray-900 transition-colors duration-300"
-          >
-            Invia
-          </button>
-        </form>
+    <button
+      type="submit"
+      className="relative inline-flex items-center justify-center px-5 py-2.5 mb-2 me-2 overflow-hidden text-lg font-medium text-white rounded-lg border border-cyan-500 bg-transparent hover:bg-white hover:text-gray-900 transition-colors duration-300"
+    >
+      Invia
+    </button>
+  </form>
+</div>
 
         {/* SOCIAL */}
         <div className="text-center border-t border-gray-700 pt-8">
