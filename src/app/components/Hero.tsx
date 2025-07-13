@@ -33,7 +33,7 @@ export default function Hero() {
 
         {/* CERTIFICAZIONI */}
         <div className="mt-10">
-          <h2 className="text-lg font-semibold mb-8 ">Certification</h2>
+          <h2 className="text-2xl font-semibold mb-8 ">Certification</h2>
           <div className="flex justify-center gap-4 flex-wrap">
             <Image
               src="/Admin.png"
