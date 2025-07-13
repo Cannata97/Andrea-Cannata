@@ -10,6 +10,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+    <meta name="google-site-verification" content="-yT1PDpZ3Q3vh656BxXLO1M-2BlkQt1KU-y5eDzRqU0" />
       <Navbar />
       <HomeClient />
     </>
