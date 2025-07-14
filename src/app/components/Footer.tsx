@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 import { Mail, Github, Linkedin } from 'lucide-react';
 import emailjs from 'emailjs-com';
 import Image from 'next/image';
@@ -25,19 +26,17 @@ const templateParams = {
   service_requested: service,
   message: formData.message,
 };
-
-  emailjs.send(
-    process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-    templateParams,
-    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-  ).then(
-    () => {
-      alert('Email inviata con successo!');
-    },
-    (error) => {
-      alert('Errore nell’invio della mail.');
-      console.error(error);
+  toast.promise(
+    emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      templateParams,
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+    ),
+    {
+      loading: 'Sending email...',
+      success: 'Email sent successfully!',
+      error: 'There was an error sending the email. Please try again later.',
     }
   );
 };
@@ -159,7 +158,7 @@ const templateParams = {
           © {new Date().getFullYear()} Andrea Cannata. All rights reserved.
         </p>
       </div>
-      <p className="text-center text-gray-500 ">Partita iva 00000000000000</p>
+      <p className="text-center text-gray-500 ">P.IVA 000000000000</p>
     </footer>
   );
 }
