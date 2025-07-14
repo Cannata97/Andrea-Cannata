@@ -11,7 +11,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="bg-gray-900 py-24 px-6 text-center">
+    <section className="bg-gray-900 py-34 px-6 text-center ">
       <div className="max-w-4xl mx-auto space-y-6">
         <h1 className="text-4xl md:text-5xl font-bold">
           Andrea Cannata — Full-stack & Salesforce Developer
