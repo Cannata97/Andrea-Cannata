@@ -33,33 +33,34 @@ export default function Hero({ role }: Props) {
 
         <p className="text-lg text-gray-100 leading-relaxed">
           {role === 'developer' ? (
-         <>
-            I’m a <strong className="font-semibold">full-stack developer</strong> specializing in 
-            building <strong className="font-semibold">SaaS platforms</strong> from the ground up. 
-            I develop performant frontends using <strong className="font-semibold">React</strong> and 
-            <strong className="font-semibold">Next.js</strong>, and implement robust backends with 
-            <strong className="font-semibold">Node.js</strong> or <strong className="font-semibold">Spring Boot</strong>. 
-            I design <strong className="font-semibold">scalable architectures</strong>, integrate 
-            <strong className="font-semibold">third-party APIs</strong>, and deploy 
-            <strong className="font-semibold">modern cloud solutions</strong> using 
-            <strong className="font-semibold">Supabase</strong> and <strong className="font-semibold">Vercel</strong>. 
-            Whether you're launching a new product or scaling an existing one, I deliver 
-            <strong className="font-semibold">reliable</strong> and 
-            <strong className="font-semibold">maintainable solutions</strong> tailored to your business.
-          </>
+        <>
+          I&#39;m a <strong className="font-semibold">full-stack developer</strong> specializing in 
+          building <strong className="font-semibold">SaaS platforms</strong> from the ground up. 
+          I develop performant frontends using <strong className="font-semibold">React</strong> and{" "}
+          <strong className="font-semibold">Next.js</strong>, and implement robust backends with{" "}
+          <strong className="font-semibold">Node.js</strong> or <strong className="font-semibold">Spring Boot</strong>. 
+          I design <strong className="font-semibold">scalable architectures</strong>, integrate{" "}
+          <strong className="font-semibold">third-party APIs</strong>, and deploy{" "}
+          <strong className="font-semibold">modern cloud solutions</strong> using{" "}
+          <strong className="font-semibold">Supabase</strong> and <strong className="font-semibold">Vercel</strong>. 
+          Whether you&#39;re launching a new product or scaling an existing one, I deliver{" "}
+          <strong className="font-semibold">reliable</strong> and{" "}
+          <strong className="font-semibold">maintainable solutions</strong> tailored to your business.
+        </>
+
           ) : (
-           <>
-              I’m a <strong className="font-semibold">Salesforce consultant & developer</strong> with hands-on experience in 
-              <strong className="font-semibold">CPQ</strong>, <strong className="font-semibold">Flows</strong>, 
-              <strong className="font-semibold">Apex</strong>, and 
-              <strong className="font-semibold">Lightning Web Components (LWC)</strong>. I design and implement 
-              <strong className="font-semibold">scalable CRM solutions</strong> tailored to business needs, 
-              optimizing <strong className="font-semibold">sales processes</strong> and automating 
-              <strong className="font-semibold">complex workflows</strong> for 
-              <strong className="font-semibold">enterprise clients</strong>. Whether it's customizing the Salesforce platform 
-              or integrating external systems, I deliver <strong className="font-semibold">robust</strong> and 
-              <strong className="font-semibold">efficient solutions</strong> that drive productivity.
-            </>
+          <>
+            I&#39;m a <strong className="font-semibold">Salesforce consultant & developer</strong> with hands-on experience in{" "}
+            <strong className="font-semibold">CPQ</strong>, <strong className="font-semibold">Flows</strong>,{" "}
+            <strong className="font-semibold">Apex</strong>, and{" "}
+            <strong className="font-semibold">Lightning Web Components (LWC)</strong>. I design and implement{" "}
+            <strong className="font-semibold">scalable CRM solutions</strong> tailored to business needs, 
+            optimizing <strong className="font-semibold">sales processes</strong> and automating{" "}
+            <strong className="font-semibold">complex workflows</strong> for{" "}
+            <strong className="font-semibold">enterprise clients</strong>. Whether it&#39;s customizing the Salesforce platform 
+            or integrating external systems, I deliver <strong className="font-semibold">robust</strong> and{" "}
+            <strong className="font-semibold">efficient solutions</strong> that drive productivity.
+          </>
 
           )}
         </p>

@@ -5,7 +5,6 @@ import {
   Lightbulb,
   Code2,
   Cloud,
-  ReceiptText,
   PanelsTopLeft,
   Workflow,
 } from 'lucide-react';
