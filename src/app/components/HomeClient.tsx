@@ -18,9 +18,9 @@ export default function HomeClient() {
 
   return (
     <>
-      <section id="hero"><Hero /></section>
-      <section id="projects"><Projects /></section>
-      <section id="contact"><Footer /></section>
+      <section id="hero"  className="scroll-mt-18" ><Hero /></section>
+      <section id="projects" className="scroll-mt-18"><Projects /></section>
+      <section id="contact" className="scroll-mt-18"><Footer /></section>
     </>
   );
 }
