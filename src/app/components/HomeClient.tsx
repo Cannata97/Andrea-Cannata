@@ -1,26 +1,26 @@
 'use client';
 
-import { useEffect } from 'react';
-import Hero from '@/app/components/Hero';
-import Projects from '@/app/components/Projects';
-import Footer from '@/app/components/Footer';
+import { useState } from 'react';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import Services from './Projects';
+import Footer from './Footer';
 
 export default function HomeClient() {
-  useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      const el = document.querySelector(hash);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, []);
+  const [role, setRole] = useState<'developer' | 'salesforce'>('developer');
 
   return (
     <>
-      <section id="hero"  className="scroll-mt-18" ><Hero /></section>
-      <section id="projects" className="scroll-mt-18"><Projects /></section>
-      <section id="contact" className="scroll-mt-18"><Footer /></section>
+      <Navbar role={role} setRole={setRole} />
+      <section id="hero">
+        <Hero role={role} setRole={setRole} />
+      </section>
+      <section id="services">
+        <Services role={role} />
+      </section>
+      <section id="contact">
+        <Footer />
+      </section>
     </>
   );
 }
