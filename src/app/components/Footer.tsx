@@ -158,7 +158,6 @@ const templateParams = {
           © {new Date().getFullYear()} Andrea Cannata. All rights reserved.
         </p>
       </div>
-      <p className="text-center text-gray-500 ">P.IVA 000000000000</p>
     </footer>
   );
 }
